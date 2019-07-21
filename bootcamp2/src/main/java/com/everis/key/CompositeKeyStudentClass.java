@@ -4,25 +4,14 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 
-import com.everis.entity.Student;
-import com.everis.entity.Classes;
 
 @SuppressWarnings("serial")
 public class CompositeKeyStudentClass implements Serializable{
 
 	private Date dateFrom;
-	
-	@ManyToOne                   
-	@JoinColumn(name="id_student",referencedColumnName = "idStudent")	
-    private Student idStudent;
-	
-	
-	@ManyToOne                   
-	@JoinColumn(name="id_classes",referencedColumnName = "idClasses")
-    private Classes idClasses;
+    private int idStudent;
+    private int idClasses;
 	 
 	    @Override
 	    public int hashCode() {
@@ -57,22 +46,6 @@ public class CompositeKeyStudentClass implements Serializable{
 	        return true;
 	    }
 
-		public Student getIdStudent() {
-			return idStudent;
-		}
-
-		public void setIdStudent(Student idStudent) {
-			this.idStudent = idStudent;
-		}
-
-		public Classes getIdClasses() {
-			return idClasses;
-		}
-
-		public void setIdClasses(Classes idClasses) {
-			this.idClasses = idClasses;
-		}
-
 		public Date getDateFrom() {
 			return dateFrom;
 		}
@@ -81,6 +54,23 @@ public class CompositeKeyStudentClass implements Serializable{
 			this.dateFrom = dateFrom;
 		}
 
+		public int getIdStudent() {
+			return idStudent;
+		}
+
+		public void setIdStudent(int idStudent) {
+			this.idStudent = idStudent;
+		}
+
+		public int getIdClasses() {
+			return idClasses;
+		}
+
+		public void setIdClasses(int idClasses) {
+			this.idClasses = idClasses;
+		}
+
+		
 		
 	    
 	    
