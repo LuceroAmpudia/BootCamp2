@@ -78,6 +78,14 @@ public class Teacher {
 	public void setEspecialidad(String especialidad) {
 		this.especialidad = especialidad;
 	}
+
+	public School getIdSchool() {
+		return idSchool;
+	}
+
+	public void setIdSchool(School idSchool) {
+		this.idSchool = idSchool;
+	}
 	
 	
 	

@@ -44,16 +44,18 @@ public class Classes {
 		private Subject idSubject;
 
 		// Here the getters and setters are generated
+
+
+		public String getClassCode() {
+			return classCode;
+		}
+
 		public int getIdClasses() {
 			return idClasses;
 		}
 
 		public void setIdClasses(int idClasses) {
 			this.idClasses = idClasses;
-		}
-
-		public String getClassCode() {
-			return classCode;
 		}
 
 		public void setClassCode(String classCode) {
@@ -99,6 +101,8 @@ public class Classes {
 		public void setIdSubject(Subject idSubject) {
 			this.idSubject = idSubject;
 		}
+
+	
 	
 	
 }

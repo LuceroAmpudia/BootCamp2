@@ -4,12 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 
 import com.everis.entity.StudentClass;
 import com.everis.repository.StudentClassRepository;
 import com.everis.service.StudentClassService;
 
+@Service
 public class StudentClassServiceImplement implements StudentClassService {
 
 	@Autowired
